@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Резюме</title>
@@ -119,7 +120,9 @@
         </div>
     </div>
     <div class="right_column">
-        <img src="face_photo.png" height="170px">
+        
+        {% load static %}
+        <img src="{% static "img/face_photo.png" %}" height="170px">
 
         <div class="main_info">
             <h2>Головне про себе</h2>
