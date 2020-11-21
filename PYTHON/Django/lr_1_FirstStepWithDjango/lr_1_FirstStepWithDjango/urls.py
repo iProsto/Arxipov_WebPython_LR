@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import re_path
-from app1 import views
+from app1.views import index
+from bank import views 
 
 urlpatterns = [
-	re_path(r'^', views.index, name='home'),
-    path('admin/', admin.site.urls)
+	re_path(r'^/summary', index),
+	re_path(r'^bank', views.index),
+    path('admin/', admin.site.urls),
+    re_path(r'^', index)
 ]
