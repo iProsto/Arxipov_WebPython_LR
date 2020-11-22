@@ -1,4 +1,5 @@
 from django import forms
- 
+
 class User(forms.Form):
-    name = forms.CharField()
+	login = forms.CharField()
+	password = forms.CharField()

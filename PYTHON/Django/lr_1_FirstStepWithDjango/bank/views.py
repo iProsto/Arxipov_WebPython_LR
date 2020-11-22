@@ -2,10 +2,16 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .forms import User
 
+
+
 def index(request):
+	user = User()
 	if request.method == "POST":
-		name = request.POST.get("bank_login")
-		return HttpResponse("<h2>Hello, {0}</h2>".format(name))
+		login = request.POST.get("login")
+		password = request.POST.get("password")
+		if password == "1111":
+			return render(request, 'bank_menu.html',  context={"bank_login":login})
+		else:
+			return render(request, 'bank_wrong_password.html',  {'form':user})
 	else:
-		userform = User()
-		return render(request, 'bank_index.html', {'form': userform})
+		return render(request, 'bank_index.html', {'form':user})
