@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.urls import re_path
-from app1.views import index, summary_w
+from app1.views import index, summary_w, index_no_creative, summary_w_no_creative
 from bank import views 
 
 urlpatterns = [
 	re_path(r'^/summary', index),
 	re_path(r'^/summary_2', summary_w),
+    re_path(r'^/summary_no_creative', index_no_creative),
+    re_path(r'^/summary_2_no_creative', summary_w_no_creative),
 	re_path(r'^bank', views.index),
     path('admin/', admin.site.urls),
     re_path(r'^', index)
