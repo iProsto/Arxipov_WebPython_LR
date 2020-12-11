@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+	color: white;
+	background-color: #7A7A7A;
+}
+.header{
+	padding: 30px;
+	padding-left: 20px;
+	background-color: black;
+	margin-bottom: 90px;
+}
+.wrapper {
+	position: relative;
+	min-height: 100%;
+}
+.content{
+	padding-bottom: 90px;
+}
+.row{
+	border: 1px solid #A0A0A0;
+	padding-left: 70px;
+}
+.date{
+	text-align: right;
+	color: #A6A6A6;
+}
+.head_title{
+	margin-bottom: 20px;
+}
+.add{
+	text-align: right;
+	padding-right: 20px;
+	float: right;
+	margin-top: -20px;
+}
+.edit{
+	float: right;
+	margin-top: -10px;
+}
+.save_button{
+	padding: 5px;
+	width: 300px;
+	background-color: #3A91E1;
+	border: 2px solid #21517E;
+	width: 98%;
+}
+.post-form input, button, textarea{
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 4px;
+	margin: 4px;
+	width: 98%;
+}
+.post-form p{
+	font-size: 20px;
+}
+.post{
+	border: 1px solid #A0A0A0;
+	padding-left: 20px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+
+}
+.post h1{
+	padding-bottom: 10px;
+}
+footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+	background-color: black;
+	text-align: center;
+}
+footer p{
+	padding-top: 20px;
+	color: #7A7A7A;
+}
+a { 
+	text-decoration: none; 
+	color: inherit;
+}
+
+

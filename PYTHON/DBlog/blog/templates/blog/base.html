@@ -1,0 +1,37 @@
+{% load static %}
+<html>
+<head>
+    <title>Python with Django</title>
+   <!--  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="header">
+        <div class="head_title">
+            <h1><a href="/">Python with Django</a></h1>
+            <h5>Blog</h5>
+        </div>
+        <div class="add">
+            {% if user.is_authenticated %}
+            <a href="{% url 'post_new' %}"><img src="{% static 'img/add.png' %}" height="50"></a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+                {% block content %}
+
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by Maksym Arkhipov</p>
+    </footer>
+</body>
+</html>
