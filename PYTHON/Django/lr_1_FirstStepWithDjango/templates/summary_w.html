@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Резюме</title>
+</head>
+<style>
+    body, html {
+        margin: 20px;
+        padding: 0;
+        text-align: justify;
+        color: dimgrey;
+    }
+
+    h2 {
+        color: #5b9bd5;
+    }
+
+    h3 {
+        color: goldenrod;
+    }
+
+    .header {
+        text-transform: uppercase;
+        line-height: 5px;
+        color: dimgrey;
+        margin-top: 24px;
+    }
+
+    .post_header {
+        margin-bottom: 95px;
+    }
+
+    footer {
+        clear: both;
+        background-color: #5b9bd5;
+        min-height: 120px;
+        color: white;
+        padding: 20px;
+    }
+
+    footer h4 {
+        color: white;
+    }
+
+    footer p {
+        margin: 5px 0 0 40px;
+    }
+
+    .left_column {
+        float: left;
+        width: 73%;
+        margin-right: 40px;
+    }
+
+    .right_column {
+        float: left;
+        width: 25%;
+    }
+</style>
+<body>
+<div class="main_content">
+    <div class="left_column">
+        <h2 class="header">Архіпов Максим</h2>
+        <h2 class="header">Олександрович</h2>
+        <p class="post_header">Програміст-проектувальник Java</p>
+
+        <div class="education">
+            <h2>Освіта</h2>
+            <p>
+                Диплом молодшого спеціаліста у галузі «Програмна інженерія».
+            </p>
+            <p>
+                На сьогодні продовжую навчання на другому курсі у Черкаському
+                державному технологічному університеті по спеціальності «Програмна
+                інженерія».
+            </p>
+        </div>
+        <div class="experience">
+            <h2>Досвід роботи</h2>
+            <h3>Навчальна практика</h3>
+            <p>
+                Пройшов три місяці практики у навчальному закладі Світловодського
+                політехнічного коледжу у ході навчального процесу 2018-2020 років.
+                Практика включає проектування та розробку програмних додатків на мовах
+                С++ та Basic Pascal, а також проектування баз даних MySQL.
+            </p>
+            <h3>Тимчасове працевлаштування</h3>
+            <p>
+                Працював на посаді проектувальника та бекенд розробника веб-сторінки
+                aquarelle-wedding.com.
+            </p>
+            <h3>Участь у гуртку робототехніки</h3>
+            <p>
+                Розробка мобільних додатків на мові Java для керування фізичними пристроями,
+                наприклад, маніпулятором з трьома осями волі. Результатом роботи є три
+                Android додатки.
+            </p>
+        </div>
+    </div>
+    <div class="right_column">
+        
+        {% load static %}
+        <img src="{% static "img/face_photo.png" %}" height="170px">
+
+        <div class="main_info">
+            <h2>Головне про себе</h2>
+            <p>
+                20 років (12 липня 2000), неодружений, дітей немає, живу в Світловодську,
+                готовий до зміни місця проживання, водійське посвідчення категорії В,
+                поганих звичок не маю, цінність у житті – самовдосконалення
+            </p>
+        </div>
+        <div class="knowing">
+            <h2>Знання та навички</h2>
+            <table>
+                <tr>
+                    <td>OOP</td>
+                    <td>8/10</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>8/10</td>
+                </tr>
+                <tr>
+                    <td>HTML,CSS</td>
+                    <td>7/10</td>
+                </tr>
+                <tr>
+                    <td>JS</td>
+                    <td>7/10</td>
+                </tr>
+                <tr>
+                    <td>C#</td>
+                    <td>8/10</td>
+                </tr>
+                <tr>
+                    <td>Exel,Word</td>
+                    <td>8/10</td>
+                </tr>
+                <tr>
+                    <td>SQL,PHP</td>
+                    <td>8/10</td>
+                </tr>
+                <tr>
+                    <td>C++ VS 2016</td>
+                    <td>7/10</td>
+                </tr>
+                <tr>
+                    <td>Unity</td>
+                    <td>7/10</td>
+                </tr>
+            </table>
+            <h2>Мови</h2>
+            <table>
+                <tr>
+                    <td>Українська</td>
+                    <td>9/10</td>
+                </tr>
+                <tr>
+                    <td>Російська</td>
+                    <td>6/10</td>
+                </tr>
+                <tr>
+                    <td>Англійська</td>
+                    <td>5/10</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<footer>
+    <h4>
+        КОНТАКТНА ІНФОРМАЦІЯ
+    </h4>
+    <p>
+        Черкаська область, місто Черкаси, вулиця Надпільна, будинок 404, квартира 200
+    </p>
+    <p>
+        Email: joycasino@gmail.com
+    </p>
+    <p>
+        Мобільний: +380 68 097 32** (у будь-який час)
+    </p>
+</footer>
+</body>
+</html>

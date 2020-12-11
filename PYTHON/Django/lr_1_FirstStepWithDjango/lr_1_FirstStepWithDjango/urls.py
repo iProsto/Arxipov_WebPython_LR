@@ -20,8 +20,8 @@ from app1.views import index
 from bank import views 
 
 urlpatterns = [
-	path('', include('blog.urls')),
 	re_path(r'^/summary', index),
+	re_path(r'^/summary_2', summary_w),
 	re_path(r'^bank', views.index),
     path('admin/', admin.site.urls),
     re_path(r'^', index)
